@@ -48,8 +48,8 @@ npm install
 
    # NOTE
    
-1. This project uses React Router to navigate between the registration form and success page.
+-- This project uses React Router to navigate between the registration form and success page.
 
-2. No backend integration included; this is a frontend-only implementation.
+-- No backend integration included; this is a frontend-only implementation.
 
-3. Validation is done using React hooks and JavaScript regex patterns.
+-- Validation is done using React hooks and JavaScript regex patterns.

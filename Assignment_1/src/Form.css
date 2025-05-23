@@ -1,0 +1,129 @@
+/* Center form and add colors */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  background: #f9f9f9;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  color: #222;
+}
+
+.success-page {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #222a;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.5px solid #bbb;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #3751ff;
+  outline: none;
+  box-shadow: 0 0 6px #3751ffaa;
+}
+
+.error {
+  color: #b00020;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3751ff;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin-top: 1rem;
+}
+
+.submit-btn:disabled {
+  background-color: #9999cc;
+  cursor: not-allowed;
+}
+
+.show-password-label {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+
+  color: #555;
+}
+
+.phone-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phone-input select {
+  max-width: 120px;
+}
+
+ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  background: #3751ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #243dbf;
+}

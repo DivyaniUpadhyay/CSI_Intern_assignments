@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Assignment 1 - React Registration Form with Validation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React.js application implementing a registration form with client-side validation **without using any third-party libraries**.  
+The form collects user details and validates inputs such as email format, password complexity, phone number, Aadhar number, and more.  
+On successful submission, it displays all the entered data on a new route.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fields:  
+  - First Name (required)  
+  - Last Name (required)  
+  - Username (required)  
+  - Email (required, valid format)  
+  - Password (required, with show/hide toggle)  
+  - Phone Number with Country Code (India, USA, UK)  
+  - Country (dropdown)  
+  - City (dependent dropdown based on country)  
+  - PAN Number (required)  
+  - Aadhar Number (12 digits, required for India)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Real-time validation with user-friendly error messages  
+- Submit button is disabled until the form is valid  
+- Password requirements: minimum 8 characters, at least 1 uppercase, 1 lowercase, 1 number, and 1 special character  
+- Proper validation for phone number length based on country  
+- Clean and responsive UI styled with CSS
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/DivyaniUpadhyay/CSI_Intern_assignments.git 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the Assignment 1 folder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd CSI_Intern_assignments/Assignment_1
 
-### `npm run eject`
+3. install
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start
+   npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   # NOTE
+   
+1. This project uses React Router to navigate between the registration form and success page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. No backend integration included; this is a frontend-only implementation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Validation is done using React hooks and JavaScript regex patterns.

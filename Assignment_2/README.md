@@ -74,7 +74,7 @@ src/
 
 ## 🧪 Brief Testing Guidance
 
-1. Add Tasks:
+# 1. Add Tasks:
 
 -- Enter task names in the input box and click the "Add" button or press Enter.
 
@@ -82,19 +82,19 @@ src/
 
 -- Try adding duplicate tasks to ensure duplicates are accepted.
 
-2. Mark Tasks Completed:
+# 2. Mark Tasks Completed:
 
 -- Click on any task to toggle its completion status.
 
 -- Completed tasks should show a strikethrough style.
 
-3. Remove Tasks:
+# 3. Remove Tasks:
 
 -- Click the ❌ (delete) button next to a task.
 
 -- Confirm the task is removed immediately.
 
-4. Filter Tasks:
+# 4. Filter Tasks:
 
 -- Use the filter dropdown to switch views between:
 
@@ -106,19 +106,19 @@ src/
 
 -- Verify the task list updates accordingly.
 
-5. Sort Tasks:
+# 5. Sort Tasks:
 
 -- Use the sort dropdown to reorder tasks by newest first or oldest first.
 
 -- Confirm that the task order changes as expected.
 
-6. Persistence:
+# 6. Persistence:
 
 -- Refresh the browser page.
 
 -- Confirm that all tasks and their statuses remain intact (using localStorage).
 
-7. Edge Cases:
+# 7. Edge Cases:
 
 -- Rapidly add and remove tasks to check app stability.
 
